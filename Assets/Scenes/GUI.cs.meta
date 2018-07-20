@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 06e0f59a88c10004190962a3a4c57271
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Log: {fileID: 114002133750502648, guid: bd4b7a2cdd21c9442b832cc40f8dc9ce, type: 2}
+  - Method: {fileID: 114604393479377216, guid: d9cc8dc078721154f99f1f09e5fe9794, type: 2}
+  - Address: {instanceID: 0}
+  - Arg1: {fileID: 114236717208802642, guid: 03e981158fb6934468f9b398615a1c36, type: 2}
+  - Arg2: {fileID: 114626934553711208, guid: 57e122545cee41149acbf5453a834eb7, type: 2}
+  - Send: {fileID: 114431730950150708, guid: 58e326d9db100214a82b32a433f2a303, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
