@@ -44,17 +44,17 @@ public class GUI : MonoBehaviour
 
     IEnumerator SendTxAsync()
     {
-        var address = ConvertHexStringToByteArray(Address.text);
+        var address = ConvertHexStringToByteArray(Address.text.ToLower());
         switch (Method.value)
         {
             case 0:
                 var req1 = new BalanceOfRequest(address);
-                yield return req1.BalanceOf(ConvertHexStringToByteArray(Arg1.text));
+                yield return req1.BalanceOf(ConvertHexStringToByteArray(Arg1.text.ToLower()));
                 ProcessResult(req1);
                 break;
             case 1:
                 var req2 = new TransferRequest(address);
-                yield return req2.Transfer(ConvertHexStringToByteArray(Arg1.text), int.Parse(Arg2.text));
+                yield return req2.Transfer(ConvertHexStringToByteArray(Arg1.text.ToLower()), int.Parse(Arg2.text));
                 ProcessResult(req2);
                 break;
             case 2:
