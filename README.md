@@ -5,13 +5,13 @@ This is a simple app implemented on Unity that using Unity implementaion of [Pra
 ## Structure of repository 
 `Assets`, `Packages`, `ProjectSettings` folders contains Unity sources. 
 `Assets` contains C# sources including:
- - [`Program.cs`](Assets/Program.cs) that sends requests to local Expload client
- - [`GUI.cs`](Assets/GUI.cs) that operates with Unity graphics and UI and run requests from `Program.cs`. 
+ - [`Program.cs`](Assets/Scenes/Program.cs) that sends requests to local Expload client
+ - [`GUI.cs`](Assets/Scenes/GUI.cs) that operates with Unity graphics and UI and run requests from `Program.cs`. 
 
-`Program.cs` was automatically generated from other C# source file by [Pravda Dotnet translator](https://github.com/expload/pravda/blob/master/doc/dotnet.md). All intermediate files are located in `Aux` folder. 
+`Program.cs` was automatically generated from other C# source file by [Pravda Dotnet translator](https://github.com/expload/pravda/blob/master/doc/dotnet.md) and [Pravda code generatation for unity](https://github.com/expload/pravda/blob/master/doc/codegen.md). All intermediate files are located in `Aux` folder. 
 
 ### Dotnet translation 
-[`SmartProgram.cs`](Aux/SmartProgram.cs) is C# source file that is compiled ([`SmartProgram.exe`](Aux/SmartProgram.exe)) and translated to Pravda program ([`SmartProgram.pravda`](Aux/SmartProgram.pravda) by the following commands: 
+[`SmartProgram.cs`](Aux/SmartProgram.cs) is C# source file that is compiled ([`SmartProgram.exe`](Aux/SmartProgram.exe)) and translated to Pravda program ([`SmartProgram.pravda`](Aux/SmartProgram.pravda)) by the following commands: 
 ```
 csc SmartProgram.cs -reference:expload.dll 
 pravda compile dotnet -i SmartProgram.exe -o SmartProgram.pravda
