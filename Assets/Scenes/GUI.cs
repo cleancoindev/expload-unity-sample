@@ -1,9 +1,10 @@
-﻿using Com.Expload.Program;
+﻿using Expload.Pravda.Program;
 using System;
 using System.Collections;
 using System.Globalization;
 using UnityEngine;
 using UnityEngine.UI;
+using Expload.Unity.Codegen;
 
 public class GUI : MonoBehaviour
 {
@@ -59,7 +60,7 @@ public class GUI : MonoBehaviour
                 break;
             case 2:
                 var req3 = new EmitRequest(address);
-                yield return req3.Emit(int.Parse(Arg1.text));
+                yield return req3.Emit(ConvertHexStringToByteArray(Arg1.text.ToLower()), int.Parse(Arg2.text));
                 ProcessResult(req3);
                 break;
             default:
