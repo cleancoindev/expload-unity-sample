@@ -2,6 +2,10 @@
 
 This is a simple app that using Unity implementaion of [Pravda DApp API](https://github.com/expload/pravda/blob/master/doc/dapp-api.md) for Expload Desktop. 
 
+**Important note:**
+The generated code uses [Json .NET](https://www.newtonsoft.com/json) library for hadling Json.
+You can download Unity version of it from [AssetStore](https://assetstore.unity.com/packages/tools/input-management/json-net-for-unity-11347).
+
 ## Structure of the repository 
 `Assets` contains C# sources including:
  - [`ExploadUnityCodegen.cs`](Assets/ExploadUnityCodegen.cs) is auxiliary file for generated `Program.cs` that forms requests and parses responses of DApp API.  
