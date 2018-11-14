@@ -197,6 +197,7 @@ namespace Expload.Unity.Codegen
 
     public class ExploadResponse
     {
+	public string transactionId { get; set; }
         public string error { get; set; }
         public string errorCode { get; set; }
         public ExploadResponseData data { get; set; }
@@ -207,6 +208,7 @@ namespace Expload.Unity.Codegen
         public byte[] ProgramAddress { get; protected set; }
 
         public T Result { get; protected set; }
+	public string TransactionId { get; protected set; }
         public string Error { get; protected set; }
         public bool IsError { get; protected set; }
 
@@ -239,6 +241,7 @@ namespace Expload.Unity.Codegen
                 try
                 {
                     var response = JsonConvert.DeserializeObject<ExploadResponse>(www.downloadHandler.text);
+		    TransactionId = response.transactionId;
                     if (response.error.Length != 0) {
                         IsError = true;
                         Error = "Error from response: " + response.error;

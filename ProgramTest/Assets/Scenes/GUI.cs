@@ -71,7 +71,8 @@ public class GUI : MonoBehaviour
     }
 
     void ProcessResult<T>(ProgramRequest<T> req)
-    {       
+    {      
+	Debug.Log(req.TransactionId);
         if (req.IsError)
         {
             Log.text += "\n";
