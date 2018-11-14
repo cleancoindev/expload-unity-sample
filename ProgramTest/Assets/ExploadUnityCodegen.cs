@@ -245,8 +245,7 @@ namespace Expload.Unity.Codegen
                     } else if (response.data.finalState.stack.Length > 1) {
                         IsError = true;
                         Error = "Invalid method result:\n[" + String.Join(", ", response.data.finalState.stack) + "]";
-                    }
-                    if (response.data.finalState.stack.Length == 1) {
+                    } else if (response.data.finalState.stack.Length == 1) {
                         Result = ParseResult(response.data.finalState.stack[0]);
                     }
                 }
