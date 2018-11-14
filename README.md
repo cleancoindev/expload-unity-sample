@@ -8,9 +8,9 @@ You can download Unity version of it from [AssetStore](https://assetstore.unity.
 
 ## Structure of the repository 
 `Assets` contains C# sources including:
- - [`ExploadUnityCodegen.cs`](Assets/ExploadUnityCodegen.cs) is auxiliary file for generated `Program.cs` that forms requests and parses responses of DApp API.  
- - [`Program.cs`](Assets/Program.cs) is generated file that exposes functionality to call program`s methods and parse the raw results.  
- - [`GUI.cs`](Assets/Scenes/GUI.cs) operates with Unity graphics and UI and uses functionality from `Program.cs`. 
+ - [`ExploadUnityCodegen.cs`](ProgramTest/Assets/ExploadUnityCodegen.cs) is auxiliary file for generated `Program.cs` that forms requests and parses responses of DApp API.  
+ - [`Program.cs`](ProgramTest/Assets/Program.cs) is generated file that exposes functionality to call program's methods and parse the raw results.  
+ - [`GUI.cs`](ProgramTest/Assets/Scenes/GUI.cs) operates with Unity graphics and UI and uses functionality from `Program.cs`. 
 
 `Program.cs` was automatically generated from other C# source file by [Pravda Dotnet translator](https://github.com/expload/pravda/blob/master/doc/ref/dotnet/translation.md) and [Pravda code generatation for unity](https://github.com/expload/pravda/blob/master/doc/codegen.md).
 
