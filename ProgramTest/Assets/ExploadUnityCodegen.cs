@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -197,7 +197,11 @@ namespace Expload.Unity.Codegen
 
     public class ExploadResponse
     {
+<<<<<<< Updated upstream:ProgramTest/Assets/ExploadUnityCodegen.cs
 	public string transactionId { get; set; }
+=======
+	    public string transactionId { get; set; }
+>>>>>>> Stashed changes:Assets/ExploadUnityCodegen.cs
         public string error { get; set; }
         public string errorCode { get; set; }
         public ExploadResponseData data { get; set; }
@@ -208,7 +212,11 @@ namespace Expload.Unity.Codegen
         public byte[] ProgramAddress { get; protected set; }
 
         public T Result { get; protected set; }
+<<<<<<< Updated upstream:ProgramTest/Assets/ExploadUnityCodegen.cs
 	public string TransactionId { get; protected set; }
+=======
+	    public string TransactionId { get; protected set; }
+>>>>>>> Stashed changes:Assets/ExploadUnityCodegen.cs
         public string Error { get; protected set; }
         public bool IsError { get; protected set; }
 
@@ -240,8 +248,13 @@ namespace Expload.Unity.Codegen
             {
                 try
                 {
+                    Debug.Log(www.downloadHandler.text);
                     var response = JsonConvert.DeserializeObject<ExploadResponse>(www.downloadHandler.text);
+<<<<<<< Updated upstream:ProgramTest/Assets/ExploadUnityCodegen.cs
 		    TransactionId = response.transactionId;
+=======
+		            TransactionId = response.transactionId;
+>>>>>>> Stashed changes:Assets/ExploadUnityCodegen.cs
                     if (response.error.Length != 0) {
                         IsError = true;
                         Error = "Error from response: " + response.error;

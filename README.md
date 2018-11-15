@@ -6,6 +6,14 @@ This is a simple app that using Unity implementaion of [Pravda DApp API](https:/
 The generated code uses [Json .NET](https://www.newtonsoft.com/json) library for hadling Json.
 You can download Unity version of it from [AssetStore](https://assetstore.unity.com/packages/tools/input-management/json-net-for-unity-11347).
 
+## Installation
+
+ 1. Clone this repo 
+ 2. Open `ProgramTest` as Unity Project
+ 3. Select `SampleScene`
+ 3. Select Send Button in Canvas ![SendElement](pics/SendElement.png)
+ 4. Select `GUI.cs` as Script for this button ![SendScript](pics/SendScript.png)
+
 ## Structure of the repository 
 `Assets` contains C# sources including:
  - [`ExploadUnityCodegen.cs`](ProgramTest/Assets/ExploadUnityCodegen.cs) is auxiliary file for generated `Program.cs` that forms requests and parses responses of DApp API.  
@@ -28,7 +36,7 @@ pravda gen unity -i SmartProgram.pravda
 ```
 This command will create `Assets` folder and place all generated files to it. 
 
-## SmartProgram
+### SmartProgram
 `SmartProgram.cs` contains three methods: 
  - `Emit` that emits tokens to the sender's balance;
  - `BalanceOf` that checks balance of the given address;
@@ -40,4 +48,6 @@ For detailed description of how these classes were genereated you can look [here
 ## GUI
 This Unity app has very simple GUI where you should specify address of program in the blockchain, what method to run and arguments for chosen method. 
 
+It contains only `SampleScene` that is shown at the following picture:
+![MainScreen](pics/MainScreen.png)
 
