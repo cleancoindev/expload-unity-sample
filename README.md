@@ -49,5 +49,6 @@ For detailed description of how these classes were genereated you can look [here
 This Unity app has very simple GUI where you should specify address of program in the blockchain, what method to run and arguments for chosen method. 
 
 It contains only `SampleScene` that is shown at the following picture:
+
 ![MainScreen](pics/MainScreen.png)
 
