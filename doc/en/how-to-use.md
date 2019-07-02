@@ -1,5 +1,3 @@
-# How to use
-
 This is a simple app that using Unity implementaion of [Pravda DApp API](https://developers.expload.com/documentation/pravda/integration/dapp-api/) for Expload Desktop. 
 
 **Important note:**
